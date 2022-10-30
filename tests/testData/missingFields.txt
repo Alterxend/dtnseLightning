@@ -1,0 +1,1 @@
+{"flashType":0,"strikeTime":1686286219187,"latitude":64.05297838071345,"peakAmps":15815,"reserved":"000","icHeight":8940,"receivedTime":1386285919187,"numberOfSensors":17,"multiplicity":1}

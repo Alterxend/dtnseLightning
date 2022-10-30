@@ -1,0 +1,9 @@
+{"assetName":"Dante Street","quadKey":"023112133033","assetOwner":"6720"}
+{"assetName":"Rockford Parkway","quadKey":"023232133033","assetOwner":"6721"}
+{"assetName":"Stanley Street","quadKey":"023322133033","assetOwner":"6722"}
+{"assetName":"Marsh Lane","quadKey":"023322133022","assetOwner":"6723"}
+{"assetName":"Craftsman Blvd","quadKey":"023111133033","assetOwner":"6724"}
+{"assetName":"Record Court","quadKey":"022112133033","assetOwner":"6725"}
+{"assetName":"Veritas Avenue","quadKey":"023113133033","assetOwner":"6726"}
+{"assetName":"Keen Street","quadKey":"023112103033","assetOwner":"6727"}
+{"assetName":"Woodriver Promenade","quadKey":"021112111033","assetOwner":"6728"}
