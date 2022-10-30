@@ -25,3 +25,5 @@ frequent strikes, what are the first things you would think of to speed it up?</
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data and lightning strike data.</li>
 </bl>
+
+#### Author: Jacob Ainsworth
