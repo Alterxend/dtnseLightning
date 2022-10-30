@@ -1,14 +1,15 @@
 const quadkeytools = require("quadkeytools")
 
+
 module.exports = {
-    processStrikes: function(strikes, assets, timeThreshold){
+    processStrikes: function (strikes, assets, timeThreshold) {
         //This function is for processing an array of objects containing lightning strike data
-        for(let i = 0 ; i< strikes.length; i++){
+        for (let i = 0; i < strikes.length; i++) {
             let strike = strikes[i]
-            if(strike['flashType'] == 9){
+            if (strike['flashType'] == 9) {
                 // If the flashType is a heartbeat it is ignored, and we move on to the next strike.
                 continue
-            }else {
+            } else {
                 if (strike['latitude'] === undefined || strike['longitude'] === undefined) {
                     // If the JSON is missing fields lat/lng we cannot match it to an asset and because of this
                     //  generate an error message and move on to the next strike.
@@ -35,20 +36,22 @@ module.exports = {
         //   this program I wrote to accept args via http.
         return assets
     },
-    unpackFile: function(inputFile) {
+
+    unpackFile: function (inputFile) {
         // This function is used to unpack stream data from files and place the json objects into arrays
         let objList = []
         inputFile.split(/\r?\n/).forEach(line => {
             try {
                 line = JSON.parse(line)
                 objList.push(line)
-            } catch (error){
+            } catch (error) {
                 console.log(`Warning: Failed to parse input to JSON because ${error}`)
             }
         })
         return objList
     },
-    assetTimeInit: function(assets) {
+
+    assetTimeInit: function (assets) {
         // This function is only needed to initialize assets for the simulation.
         let unixTime = Date.now()
         assets.forEach(asset => {
